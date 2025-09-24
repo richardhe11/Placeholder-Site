@@ -11,8 +11,25 @@
 
   <body>
 	<div class="portfolio">
-		<embed src= "RichardHe_portfolio.pdf" type="application/pdf">
+		<object
+			data="RichardHe_Portfolio.pdf" 
+			type="application/pdf"
+			aria-label="Richard He Portfolio">
+
+<!-- Fallback: iframe for browsers that support it -->
+		<iframe 
+			src="RichardHe_Portfolio.pdf" 
+			class="pdf-container"
+			title="Richard He Portfolio">
+
+<!-- Final fallback: download link -->
+			<div class="fallback-message" style="display: block;">
+				<h2>PDF Viewer Not Supported</h2>
+				<p>If you're seeing this, it seems that your browser doesn't support viewing this PDF. Please download the portfolio directly:</p>
+				<a href="RichardHe_Portfolio.pdf">www.richardhe.ca/RichardHe_Portfolio.pdf</a>
+			</div>
+
 	</div>
-	<p>If you see this message, your browser may not support PDF viewing, which works best on a desktop browser. If you are using a mobile device, you can download the file directly at <a href="https://richardhe.ca/RichardHe_Portfolio.pdf">www.richardhe.ca/Richard He_Portfolio.pdf</a>. </p>
+
   </body>
 </html>
